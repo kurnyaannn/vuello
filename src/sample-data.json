@@ -1,0 +1,45 @@
+{
+  "containers": [
+    {
+      "id": 1,
+      "name": "Todo"
+    },
+    {
+      "id": 2,
+      "name": "Pending"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "id_container": 1,
+      "title": "Working",
+      "flags": [
+        "work",
+        "urgent"
+      ],
+      "content": "This needs to be done ASAP",
+      "created_at": "05-03-2022"
+    },
+    {
+      "id": 2,
+      "id_container": 1,
+      "title": "Ngoding",
+      "flags": [
+        "daily"
+      ],
+      "content": "This is daily routine",
+      "created_at": "05-03-2022"
+    },
+    {
+      "id": 3,
+      "id_container": 2,
+      "title": "Sleeping",
+      "flags": [
+        "daily"
+      ],
+      "content": "Killing time with sleeping.",
+      "created_at": "05-03-2022"
+    }
+  ]
+}
