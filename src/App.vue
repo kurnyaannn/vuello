@@ -16,7 +16,7 @@ const payload = computed(() => {
 onBeforeMount(async () => {
   const data = store.getters['vuello/getVuelloDatas']
   if (!data) {
-    await axios.get('/src/sample-data.json').then(({ data }) => {
+    await axios.get('/public/sample-data.json').then(({ data }) => {
       store.dispatch('vuello/setVuello', data)
     })
   }
