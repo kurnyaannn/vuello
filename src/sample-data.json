@@ -1,45 +1,33 @@
 {
+  "title": "Vuello Board",
   "containers": [
     {
       "id": 1,
-      "name": "Todo"
+      "name": "Introduction",
+      "is_editing_container": false,
+      "is_adding_card": false
     },
     {
       "id": 2,
-      "name": "Pending"
+      "name": "Todo",
+      "is_editing_container": false,
+      "is_adding_card": false
     }
   ],
   "cards": [
     {
       "id": 1,
       "id_container": 1,
-      "title": "Working",
-      "flags": [
-        "work",
-        "urgent"
-      ],
-      "content": "This needs to be done ASAP",
-      "created_at": "05-03-2022"
+      "title": "About Vuello",
+      "content": "Yeah i know. It's just another low quality Trello rip off.",
+      "is_editing_card": false
     },
     {
       "id": 2,
       "id_container": 1,
-      "title": "Ngoding",
-      "flags": [
-        "daily"
-      ],
-      "content": "This is daily routine",
-      "created_at": "05-03-2022"
-    },
-    {
-      "id": 3,
-      "id_container": 2,
-      "title": "Sleeping",
-      "flags": [
-        "daily"
-      ],
-      "content": "Killing time with sleeping.",
-      "created_at": "05-03-2022"
+      "title": "About Data",
+      "content": "Vuello will automatically fetch sample data if none exist inside current State.\n\nVuello is using persisted state, that means data won't be resetted even after full page reload.",
+      "is_editing_card": false
     }
   ]
 }

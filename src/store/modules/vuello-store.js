@@ -1,33 +1,24 @@
+import axios from 'axios'
+
 const state = {
-  savedTasks: []
+  vuello: null
 }
 
 const getters = {
-  getSavedTasks(state) {
-    return state.savedTasks
-  },
-  getD() {
-    return 'OKE'
+  getVuelloDatas(state) {
+    return state.vuello
   }
 }
 
 const actions = {
-  saveTask({ commit }, task) {
-    commit('SET_TASK', task)
-  },
-  removeTask({ commit }, task) {
-    commit('REMOVE_TASK', task)
+  setVuello({ commit }, data) {
+    commit('SET_VUELLO', data)
   }
 }
 
 const mutations = {
-  SET_TASK(state, task) {
-    state.savedTasks.push(task)
-    localStorage.setItem('vuello', JSON.stringify(state.savedTasks))
-  },
-  REMOVE_TASK(state, task) {
-    state.savedTasks.filter(item => item.id !== task.id)
-    localStorage.setItem('vuello', JSON.stringify(state.savedTasks))
+  SET_VUELLO(state, data) {
+    state.vuello = data
   }
 }
 
