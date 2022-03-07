@@ -17,8 +17,8 @@ const buttonType = computed(() => {
 })
 const buttonModel = computed(() => {
   if (props.model === 'outline') {
-    return `border hover:border-transparent hover:bg-${
-      props.type === 'primary' ? 'blue-700' : 'red-500'
+    return `border hover:border-transparent ${
+      props.type === 'primary' ? 'hover:bg-blue-700' : 'hover:bg-red-500'
     } hover:text-white`
   } else {
     return `border ${

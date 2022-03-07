@@ -25,7 +25,7 @@ onBeforeMount(async () => {
 
 <template>
   <div v-if="payload" class="flex h-screen flex-col p-4">
-    <h1 class="text-3xl font-bold">{{ payload.title }}</h1>
+    <h1 class="text-3xl font-bold mb-4">{{ payload.title }}</h1>
     <KanbanBoard
       :payload="payload"
       @addContainer="displayContainerModal = true"
