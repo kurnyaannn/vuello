@@ -39,6 +39,7 @@ const newCardData = reactive({
 })
 const vuello = reactive({
   title: null,
+  last_modified: new Date().toLocaleString('en-GB'),
   containers: [],
   cards: [],
 })
@@ -74,7 +75,6 @@ const dropItem = (event, containerId) => {
   const id = event.dataTransfer.getData('id')
   const item = vuello.cards.find((card) => card.id == id)
   item.id_container = containerId
-  console.log(event, containerId)
   store.dispatch('vuello/setVuello', vuello)
 }
 const handleDeleteItem = (type, id) => {
@@ -274,6 +274,7 @@ const handleEditCard = (type, selectedCard) => {
                       <MoveIcon
                         height="25px"
                         class="cursor-grab rounded-full p-1 text-gray-400 hover:bg-gray-200 hover:text-gray-700"
+                        @click.stop=""
                         @mouseenter="state.isDraggable = true"
                         @mouseleave="state.isDraggable = false"
                       />
