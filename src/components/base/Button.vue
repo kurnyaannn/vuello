@@ -10,9 +10,9 @@ const props = defineProps({
 const emits = defineEmits(['click'])
 const buttonType = computed(() => {
   if (props.type === 'primary') {
-    return 'border-blue-500 text-blue-600'
+    return `border-blue-500 ${props.model === 'outline' ? 'text-blue-600' : ''}`
   } else {
-    return 'border-red-500 text-red-700'
+    return `border-red-500 ${props.model === 'outline' ? 'text-red-700' : ''}`
   }
 })
 const buttonModel = computed(() => {

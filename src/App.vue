@@ -58,6 +58,7 @@ const handleEditTitle = (type) => {
         type="text"
         class="block w-[230px] rounded-lg border border-gray-300 bg-gray-50 p-2 text-xl text-gray-900 transition duration-300 ease-in-out focus:border-blue-500 focus:ring-blue-500"
         placeholder="Add Board Title"
+        @keypress.enter="handleEditTitle('save')"
       />
       <div class="ml-2 flex place-items-center justify-center">
         <SaveIcon
