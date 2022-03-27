@@ -1,40 +1,31 @@
-# ⚡ Vite + Vue 3 + Tailwind CSS ✔
+<h1 align="center">Vuello</h1>
 
-![Vite, Vue, Tailwind CSS](https://user-images.githubusercontent.com/11320080/111277027-a9384c00-8640-11eb-8323-21889bd7c609.png)
+<p align="center">
+  <img src="https://github.com/kurnyaannn/yutub-downloader/blob/master/public/vuello.gif?raw=true">
+</p>
 
-This starter template includes:
+## Details
+Just another low quality Trello rip off. Built using Vite-VueJS with <a href="https://vuejs.org/api/sfc-script-setup.html">script setup</a> and TailwindCSS.
 
-- [Vite](https://vitejs.dev/guide/)
-- [Vue 3](https://vuejs.org/guide/introduction.html)
-- [Tailwind CSS v3](https://tailwindcss.com/docs/configuration)
-- [Vue Router v4](https://github.com/vuejs/router)
-- [Inter var font](https://github.com/rsms/inter) (self-hosted, woff2, v3.19, with 'preload' attr, check out index.html)
-- [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
-- [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful hand-crafted SVG icons,
-by the makers of Tailwind CSS
-- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
+live demo : https://kurnyaannn-vuello.netlify.app/
 
-First-party plugins needed for Tailwind UI:
+## Installation
+* Clone this repository using `git clone` command (or just download the `zip` version).
+* Navigate to Project Directory. Project setup using `npm`.
+  ```bash
+  $ npm install
+  ```
+* Compiles and hot-reloads for `development`
+  ```bash
+  $ npm run dev
+  ```
+* Compiles and minifies for `production`
+  ```bash
+  $ npm run build
+  ```
 
-- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-- [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-- [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+## License
+As you can see Yutub Downloader is under MIT License
 
-### Getting Started
-
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/web2033/vite-vue3-tailwind-starter)
-
-```sh
-npx degit web2033/vite-vue3-tailwind-starter vvt-app
-cd vvt-app
-```
-
-```sh
-npm i
-npm run dev
-npm run build
-npm run serve
-```
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/web2033/vite-vue3-tailwind-starter)
+## About the Author
+<a href="http://facebook.com/y21kurnia">Yayang Kurnia</a>.
