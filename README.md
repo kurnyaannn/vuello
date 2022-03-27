@@ -25,6 +25,9 @@ live demo : https://kurnyaannn-vuello.netlify.app/
   ```bash
   $ npm run build
   ```
+## Attribution
+
+- [Icons SVG](https://feathericons.com)
 
 ## License
 
