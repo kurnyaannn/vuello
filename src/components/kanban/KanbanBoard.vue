@@ -17,6 +17,7 @@ const props = defineProps({
     default: () => {},
   },
 })
+
 const emits = defineEmits(['addContainer', 'addCard'])
 
 const store = useStore()
@@ -39,7 +40,7 @@ const newCardData = reactive({
 })
 const vuello = reactive({
   title: null,
-  last_modified: new Date().toLocaleString('en-GB'),
+  last_modified: null,
   containers: [],
   cards: [],
 })
@@ -48,6 +49,7 @@ watch(
   () => props.payload,
   (newValue) => {
     vuello.title = newValue.title
+    vuello.last_modified = newValue.last_modified
     vuello.containers = newValue.containers
     vuello.cards = newValue.cards
   },
@@ -75,6 +77,7 @@ const dropItem = (event, containerId) => {
   const id = event.dataTransfer.getData('id')
   const item = vuello.cards.find((card) => card.id == id)
   item.id_container = containerId
+  vuello.last_modified = new Date().toLocaleString('en-GB')
   store.dispatch('vuello/setVuello', vuello)
 }
 const handleDeleteItem = (type, id) => {
@@ -99,6 +102,7 @@ const deleteItem = (type) => {
       (card) => card.id !== state.selectedCardId
     )
   }
+  vuello.last_modified = new Date().toLocaleString('en-GB')
   store.dispatch('vuello/setVuello', vuello)
   state.isRemovingContainer = false
   state.isRemovingCard = false
@@ -144,6 +148,7 @@ const handleKanbanAction = (mode, type, containerId, payload) => {
       ? (payload.is_editing_container = false)
       : (payload.is_editing_card = false)
   }
+  vuello.last_modified = new Date().toLocaleString('en-GB')
   store.dispatch('vuello/setVuello', vuello)
   newCardData.id = null
   newCardData.id_container = null

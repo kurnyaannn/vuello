@@ -1,5 +1,5 @@
 {
-  "title": "Vuello Board",
+  "title": "Board Title",
   "last_modified": "23/03/2022, 06:42:32",
   "containers": [
     {
@@ -27,7 +27,7 @@
       "id": 2,
       "id_container": 1,
       "title": "About Data",
-      "content": "Vuello will automatically fetch sample data if none exist inside current State.\n\nVuello is using persisted state, that means data won't be resetted even after full page reload.",
+      "content": "Vuello will automatically fetch sample data if none exist inside current State.\n\nVuello is using persisted state, that means data won't be resetted even after full page reload.* \n\n\n *) as long as you did not delete the localStorage",
       "is_editing_card": false
     }
   ]

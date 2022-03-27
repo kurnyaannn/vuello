@@ -59,7 +59,7 @@ const buttonAction = (event) => {
 <template>
   <button
     class="flex place-items-center justify-center font-semibold"
-    :class="`${buttonType} ${buttonModel} ${buttonSize} ${roundedSize}`"
+    :class="`${buttonType} ${buttonModel} ${buttonSize} ${roundedSize} transition-all duration-300 ease-in-out`"
     @click="buttonAction($event)"
   >
     <slot></slot>
