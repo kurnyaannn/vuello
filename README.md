@@ -31,7 +31,7 @@ live demo : https://kurnyaannn-vuello.netlify.app/
 
 ## License
 
-As you can see Yutub Downloader is under MIT License
+As you can see Vuello is under MIT License
 
 ## About the Author
 
