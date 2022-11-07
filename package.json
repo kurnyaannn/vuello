@@ -10,7 +10,7 @@
     "axios": "^0.26.0",
     "prettier": "^2.5.1",
     "vue": "^3.2.31",
-    "vuex": "^4.0.2",
+    "vuex": "^4.1.0",
     "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
